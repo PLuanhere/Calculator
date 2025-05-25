@@ -57,6 +57,8 @@
             android:orientation="vertical">
 
             <!-- Hàng 1: + - x -->
+
+            <!-- Hàng 2: 1 2 3 -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -94,7 +96,6 @@
 
             </LinearLayout>
 
-            <!-- Hàng 2: 1 2 3 -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -249,7 +250,7 @@
             <Button
                 android:id="@+id/button_divide"
                 android:layout_width="wrap_content"
-                android:layout_height="1dp"
+                android:layout_height="3dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:background="#7B5FA0"
@@ -259,7 +260,7 @@
             <Button
                 android:id="@+id/button_c"
                 android:layout_width="match_parent"
-                android:layout_height="69dp"
+                android:layout_height="59dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:background="#7B5FA0"
