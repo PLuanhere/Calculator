@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--Input-->
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:background="#555555"
+            android:hint="Input"
+            android:padding="16dp"
+            android:textColor="#ffffff" />
+
+        <!--Output-->
+        <EditText
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#555555"
+            android:hint="Output"
+            android:padding="16dp"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:id="@+id/keypad_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Hàng 1: + - x -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_plus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#7B5FA0"
+                    android:text="+"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/button_sub"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#7B5FA0"
+                    android:text="-"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/button_multi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#7B5FA0"
+                    android:text="x"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <!-- Hàng 2: 1 2 3 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#7B5FA0"
+                    android:text="1"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/button_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#7B5FA0"
+                    android:text="2"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/button_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#7B5FA0"
+                    android:text="3"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+
+            <!-- Hàng 3: 4 5 6 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#7B5FA0"
+                    android:text="4"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/button_5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#7B5FA0"
+                    android:text="5"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/button_6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#7B5FA0"
+                    android:text="6"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <!-- Hàng 4: 7 8 9 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#7B5FA0"
+                    android:text="7"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/button_8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#7B5FA0"
+                    android:text="8"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/button_9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#7B5FA0"
+                    android:text="9"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <!-- Hàng 5: 0 và = -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="2"
+                    android:background="#7B5FA0"
+                    android:text="0"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/button_equal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="2"
+                    android:background="#7B5FA0"
+                    android:text="="
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Cột cuối: ÷, C, AC -->
+        <LinearLayout
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_divide"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="#7B5FA0"
+                android:text="÷"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/button_c"
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="#7B5FA0"
+                android:text="C"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/button_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="59dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="#7B5FA0"
+                android:text="AC"
+                android:textColor="#ffffff"
+                app:iconPadding="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
